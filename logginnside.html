@@ -25,12 +25,16 @@
     </script>
     <div class="header">
         <div class="headertekst">
-            <div id="logo"></div>      
-            <div id="events">
-                <p>Events</p>
+            <div id = "logo"><a href="hjemside.html">
+                <img src="Eventra2.png" style = "height:90px;"></a>
+            </div>      
+     
+            <div id = "events">
+                <a style="color:#BCEBCB;" href="Eventside.html">Events</a>
             </div>
-            <div id="login">
-                <p>Logg inn</p>
+
+            <div id = "login">
+                <a style="color:#BCEBCB;" href="logginnside.html">Logg inn</a>
             </div>
         </div>
     </div>
@@ -38,11 +42,11 @@
         <br><br><br><br><br><br>
         <div class="brukernavn_boks">
             <label for="brukernavn" id="labelskrift">Brukernavn</label>
-            <input type="text" id="brukernavn" placeholder="Skriv inn brukernavn">
+            <input type="text" id="brukernavn" placeholder="   Skriv inn brukernavn">
         </div>
         <div class="passord_boks">
             <label for="passord" id="labelskrift">Passord</label>
-            <input type="password" id="passord" placeholder="Skriv inn passord">
+            <input type="password" id="passord" placeholder="   Skriv inn passord">
         </div>
         <div class="logginn_knapp">
             <button class="button" onclick="logg_inn()">Logg inn</button>
@@ -54,7 +58,7 @@
             width: 1442px;
             height: 720px;
             margin-left: -10px;
-            background-image: linear-gradient(to bottom right, #87d68d, #636a6f);
+            background-image: linear-gradient(to bottom right, #87d68d, #706283);
         }
 
         .brukernavn_boks,
@@ -126,20 +130,20 @@
 
         #logo {
             margin-left: 30px;
-            background-image: url(Eventra2.png);
-            height: 100px;
-            width: 150px;
-            background-size: cover;
-        }
-
-        #events {
-            margin-left: 100px;
             margin-top: 10px;
         }
 
-        #login {
+        #events{
+            margin-left: 40px;
+            margin-top: 40px;
+        }
+
+        #login{
             margin-left: 900px;
-            margin-top: 10px;
+            margin-top: 39px;
+        }
+        a{
+            text-decoration:none;
         }
     </style>
 </body>
