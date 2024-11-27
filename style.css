@@ -1,0 +1,90 @@
+body{
+    background-color: #87D68D;
+}
+
+.header{
+    background-color:#6E6A6F;
+    border-bottom: 7px solid #BCEBCB;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -10px;
+}
+.headertekst{
+    display:flex;
+    justify-content: start;
+    flex-direction: row;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1.5px;
+    color:#BCEBCB;
+}
+#logo{
+    margin-left: 30px;
+    margin-top: 0px;
+    background-image: url(Eventra2.png);
+    height: 100px;
+    width: 150px;
+    background-size: cover;
+}
+
+#events{
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+#login{
+    margin-left: 900px;
+    margin-top: 10px;
+}
+
+.event{
+    display: flex;
+    justify-self: center;
+    margin-top: 100px;
+    background-color: #BCEBCB;
+    width: 650px;
+    height: 300px;
+}
+
+#beskrivelseboks{
+    background-color: rgba(255, 255, 255, 0.437);
+    height: 190px;
+    width: 320px;
+    margin-top: 85px;
+    margin-left: -115px;
+    color: #000000;
+    padding-left: 15px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+#bildeboks{
+    background-image: url(image.jpg);
+    background-size: cover;
+    height: 250px;
+    width: 250px;
+    margin-top: 25px;
+    margin-left: 30px;
+    
+}
+
+#eventnavn{
+    height: 40px;
+    width: 100px; 
+    padding-left: 30px;
+    padding-top: 10px;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+.line{
+    border-left: 1px solid rgb(0, 0, 0);
+    height: 500px;
+    margin-top: -600px;
+    margin-left: 300px;
+}
+.line2{
+    border-left: 1px solid rgb(0, 0, 0);
+    height: 500px;
+    margin-top: -515px;
+    margin-left: 1120px;
+}
