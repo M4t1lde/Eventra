@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const loginDatabase = {
+            kakemonster: "cookies",
+            henrik: "appelsiner",
+            smurfeis: "dyreparkis"
+        };
+
+        function logg_inn() {
+            const brukernavn = document.getElementById("brukernavn").value;
+            const passord = document.getElementById("passord").value;
+            if (loginDatabase[brukernavn] === passord) {
+                window.location.href = "eventside.html";
+            } else {
+                document.getElementById("ikkeloggetinn").innerHTML = "Feil brukernavn eller passord";
+            }
+        }
+    </script>
+    <div class="header">
+        <div class="headertekst">
+            <div id="logo"></div>      
+            <div id="events">
+                <p>Events</p>
+            </div>
+            <div id="login">
+                <p>Logg inn</p>
+            </div>
+        </div>
+    </div>
+    <div class="kropp">
+        <div class="brukernavn_boks">
+            <label for="brukernavn" id="labelskrift">Brukernavn</label>
+            <input type="text" id="brukernavn" placeholder="Skriv inn brukernavn">
+        </div>
+        <div class="passord_boks">
+            <label for="passord" id="labelskrift">Passord</label>
+            <input type="password" id="passord" placeholder="Skriv inn passord">
+        </div>
+        <div class="logginn_knapp">
+            <button class="button" onclick="logg_inn()">Logg inn</button>
+            <p id="ikkeloggetinn"></p>
+        </div>
+    </div>  
+    <style>
+        .kropp {
+            width: 100%;
+            height: 42em;
+            background-image: linear-gradient(to bottom right, #87d68d, #636a6f);
+        }
+
+        .brukernavn_boks,
+        .passord_boks {
+            width: 100%;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        #labelskrift {
+            color: white;
+            font-size: 1.5em;
+            text-align: center;
+        }
+
+        #brukernavn,
+        #passord {
+            height: 50px;
+            width: 20%;
+            font-size: 15pt;
+        }
+
+        .logginn_knapp {
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .button {
+            background-color: #6e6a6f;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 15px;
+        }
+
+        .header {
+            background-color: #6e6a6f;
+            border-bottom: 7px solid #bceccb;
+            margin-left: -10px;
+            margin-right: -10px;
+            margin-top: -10px;
+        }
+
+        .headertekst {
+            display: flex;
+            justify-content: start;
+            flex-direction: row;
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 1.5px;
+            color: #bceccb;
+        }
+
+        #logo {
+            margin-left: 30px;
+            background-image: url(Eventra2.png);
+            height: 100px;
+            width: 150px;
+            background-size: cover;
+        }
+
+        #events {
+            margin-left: 100px;
+            margin-top: 10px;
+        }
+
+        #login {
+            margin-left: 900px;
+            margin-top: 10px;
+        }
+    </style>
+</body>
+</html>
