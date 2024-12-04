@@ -77,13 +77,13 @@ body{
     border-left: 1px solid rgb(0, 0, 0);
     height: 1000px;
     margin-top: -600px;
-    margin-left: 300px;
+    margin-left: 400px;
 }
 .line2{
     border-left: 1px solid rgb(0, 0, 0);
     height: 1000px;
     margin-top: -1000px;
-    margin-left: 1120px;
+    margin-left: 1520px;
 }
 a{
     text-decoration:none;
